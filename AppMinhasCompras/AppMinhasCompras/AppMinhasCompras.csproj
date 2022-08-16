@@ -11,7 +11,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="SQLite.Net-PCL" Version="3.1.1" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="View\lista.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
