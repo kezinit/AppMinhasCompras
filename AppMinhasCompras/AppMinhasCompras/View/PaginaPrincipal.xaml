@@ -4,16 +4,24 @@
              x:Class="AppMinhasCompras.View.PaginaPrincipal">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" Margin="10, 50" Padding="10,20">
-            <Label Text="Lista Supermercado"
+            <Label Text="MINHAS COMPRAS"
                    HorizontalOptions="Center"
                    FontSize="30"
                    FontAttributes="Bold"
-                   TextColor="white"
-                   Margin="20,40"/>
+                   TextColor="Black"
+                   Margin="20,0"/>
+            <Label Text="Organize suas compras, para uma compra mais organizada e focada na economia do seu dinheiro"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   FontSize="12"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="0,20"/>
             <Button Text="Entrar No APP" 
                     Scale="1"
                     FontAttributes="Bold"
-                    BackgroundColor="#D2B48C"
+                    BackgroundColor="#5f1e9c"
+                    TextColor="white"
                     Clicked="Button_Clicked_1"/>
             <Button Text="sair" 
                     Scale="1"

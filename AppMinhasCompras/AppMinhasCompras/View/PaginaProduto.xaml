@@ -35,7 +35,12 @@
             <Entry x:Name="txt_quantidade" Text="{Binding Quantidade}" 
                    TextColor="White"/>
 
-            <Button Text="Salvar" Clicked="Button_Clicked" BackgroundColor="#A0522D"/>
+            <Button Text="Salvar" 
+                    Clicked="Button_Clicked" 
+                    CornerRadius="13"
+                Margin="40,50"
+                    BackgroundColor="#140424"
+                    TextColor="White"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

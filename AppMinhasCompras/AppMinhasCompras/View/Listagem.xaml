@@ -5,7 +5,7 @@
 
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add"                     
+        <ToolbarItem Text="Add"
                      Clicked="ToolbarItem_Clicked" />
     </ContentPage.ToolbarItems>
 
@@ -14,7 +14,9 @@
         <StackLayout Orientation="Horizontal">
             <SearchBar x:Name="txt_busca"
                            Placeholder="Buscar Produtos"
-                           BackgroundColor="#D2B48C"
+                           PlaceholderColor="LightGray"
+                           TextColor="White"
+                           BackgroundColor="#5f1e9c"
                            HorizontalOptions="FillAndExpand"
                            TextChanged="txt_busca_TextChanged" />
         </StackLayout>
