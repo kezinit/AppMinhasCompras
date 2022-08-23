@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMinhasCompras.View.AdicionarProduto">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Listagem"                    
+                     Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <StackLayout BackgroundColor="#424242">
+
+        <Label Text="Adicionar Produto"
+                   HorizontalOptions="Center"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   TextColor="white"
+                   Margin="20,40"/>
+        <Label Text="Nome do Produto" 
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalOptions="Center"/>
+
+        <Entry x:Name="txt_descricao"
+               ClearButtonVisibility="WhileEditing" 
+               Margin="20,5"/>
+
+        <Label Text=" " />
+
+        <Label Text="Preco" 
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalOptions="Center"/>
+
+        <Entry x:Name="txt_preco"
+               ClearButtonVisibility="WhileEditing" 
+               Margin="20,5"/>
+
+        <Label Text=" " />
+
+        <Label Text="Quantidade" 
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalOptions="Center"/>
+
+        <Entry x:Name="txt_quantidade"
+               ClearButtonVisibility="WhileEditing"
+               Margin="20,5"/>
+
+
+
+        <Button Text="Adicionar Produto" 
+                Clicked="Button_Clicked_1"
+                TextColor="Black"
+                CornerRadius="13"
+                Margin="40,50"
+                FontAttributes="Bold"
+                BackgroundColor="White"/>
+    </StackLayout>
+</ContentPage>

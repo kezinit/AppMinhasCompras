@@ -9,21 +9,20 @@ namespace AppMinhasCompras
     public partial class App : Application
     {
 
-        static SQLiteDatabaseHelper database;
 
-        public static SQLiteDatabaseHelper Database
+        static SQLiteDataBaseHelper database;
+
+        public static SQLiteDataBaseHelper Database
         {
             get
             {
                 if (database == null)
                 {
                     string path = Path.Combine(
-                        Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                        "arquivo.db3"
-                    );
+                        Environment.GetFolderPath(
+                            Environment.SpecialFolder.LocalApplicationData), "arquivo.db3");
 
-
-                    database = new SQLiteDatabaseHelper(path);
+                    database = new SQLiteDataBaseHelper(path);
                 }
 
                 return database;
@@ -34,7 +33,7 @@ namespace AppMinhasCompras
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new View.Lista());
+            MainPage = new NavigationPage(new View.PaginaPrincipal());
         }
 
         protected override void OnStart()
